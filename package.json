@@ -1,0 +1,17 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Test Software Engineer Evolutiva",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael Alexandre",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "http": "0.0.1-security",
+    "json-server": "^0.16.3",
+    "nodemon": "^2.0.7"
+  }
+}
