@@ -13,3 +13,9 @@ In the project directory, you can run:
 Runs the app on [http://localhost:8000](http://localhost:8000) the provide the services.
 
 You will also see any lint errors in the console.
+
+# Client-side application (React App)
+
+This project have a client-side application.
+
+To run this application check out this repository: [https://github.com/rafael-alexandre/evolucional-pre-employment-testing-app](https://github.com/rafael-alexandre/evolucional-pre-employment-testing-app).
