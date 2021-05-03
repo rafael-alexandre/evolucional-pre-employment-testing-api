@@ -41,6 +41,9 @@ server.use((req, res, next) => {
     }
 
     res.sendStatus(200)
+  } else if (req.method === 'GET') {
+    console.log(res)
+    next()
   } else {
     next() // Continue to JSON Server router
   }

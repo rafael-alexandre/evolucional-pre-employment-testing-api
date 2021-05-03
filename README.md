@@ -8,6 +8,10 @@ This project was developed with ReactJS and NodeJS (JSON Server) for Rest API.
 
 In the project directory, you can run:
 
+### `npm install`
+
+To install the dependencies.
+
 ### `node index.js`
 
 Runs the app on [http://localhost:8000](http://localhost:8000) the provide the services.
