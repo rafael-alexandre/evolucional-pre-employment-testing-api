@@ -19,7 +19,7 @@ function insert(db, collection, data) {
     const lastItem = table.value()[table.value().length - 1]
 
     table.push({
-      id: !_.isEmpty(lastItem) ? lastItem.id + 1 : 1,
+      id: (!_.isEmpty(lastItem) ? lastItem.id + 1 : 1),
       ...data,
     }).write()
   }
@@ -29,7 +29,7 @@ function insert(db, collection, data) {
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser)
 server.use((req, res, next) => {
-  if (req.method === 'POST') {
+  if (req.method === 'POST' && req.originalUrl === '/students') {
     const db = router.db; // Assign the lowdb instance
 
     if (Array.isArray(req.body)) {
@@ -41,9 +41,6 @@ server.use((req, res, next) => {
     }
 
     res.sendStatus(200)
-  } else if (req.method === 'GET') {
-    console.log(res)
-    next()
   } else {
     next() // Continue to JSON Server router
   }
